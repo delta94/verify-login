@@ -15,7 +15,7 @@ import {
 import FacebookIcon from "src/icons/Facebook";
 import GoogleIcon from "src/icons/Google";
 import Page from "src/components/Page";
-import { auth } from "src/sdk";
+import { auth } from "verify-auth-library";
 
 const OAuth2Client = auth.OAuth2Client;
 

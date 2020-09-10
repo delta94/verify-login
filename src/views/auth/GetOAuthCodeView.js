@@ -14,7 +14,7 @@ import {
   makeStyles,
 } from "@material-ui/core";
 import Page from "src/components/Page";
-import { auth } from "src/sdk";
+import { auth } from "verify-auth-library";
 
 const useStyles = makeStyles((theme) => ({
   root: {

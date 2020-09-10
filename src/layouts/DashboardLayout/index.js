@@ -3,7 +3,7 @@ import { Outlet, useNavigate } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core';
 import NavBar from './NavBar';
 import TopBar from './TopBar';
-import { auth } from "src/sdk";
+import { auth } from "verify-auth-library";
 
 
 const useStyles = makeStyles((theme) => ({
