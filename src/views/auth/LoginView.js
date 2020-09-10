@@ -20,9 +20,9 @@ import { auth } from "src/sdk";
 const OAuth2Client = auth.OAuth2Client;
 
 const verifyOAuth = new OAuth2Client({
-  client_id: "e9d79167-974e-4058-9892-50576e8ad696",
-  redirect_uri: "http://biometric.seta-international.vn:3000/oauth",
-  secret: "s0s.XvkgD6ECkkgDKaOc7iN3u4"
+  client_id: "1d910a12-6186-421a-a3db-103417741f7c",
+  redirect_uri: "http://localhost:3000",
+  secret: "uBmN_rezn7W5BoWH5gjKPcXYkx"
 }) 
 
 const useStyles = makeStyles((theme) => ({
