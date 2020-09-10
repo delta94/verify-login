@@ -28,9 +28,9 @@ const useStyles = makeStyles((theme) => ({
 const OAuth2Client = auth.OAuth2Client;
 
 const verifyOAuth = new OAuth2Client({
-  client_id: "5e765925-d7c3-48ce-9dcc-f402b48ac7b5",
-  redirect_uri: "http://localhost:3000/oauth",
-  secret: "tnEymo-8vaMPsUGHgS1qd9zr.J",
+  client_id: "e9d79167-974e-4058-9892-50576e8ad696",
+  redirect_uri: "http://biometric.seta-international.vn:3000/oauth",
+  secret: "s0s.XvkgD6ECkkgDKaOc7iN3u4",
 });
 
 async function doAuth(navigate) {
