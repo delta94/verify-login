@@ -1,0 +1,5 @@
+{
+  "clientId": "8332da14-f784-4232-b5eb-fbe95b7b8322",
+  "clientSecret": "8SyhWHhwRPfk.zZfoGXS8sCYQV",
+  "redirectUri": "http://localhost:3000/verify-callback"
+}

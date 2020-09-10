@@ -20,6 +20,20 @@ const useStyles = makeStyles((theme) => ({
 const Account = () => {
   const classes = useStyles();
 
+  const [profile, setProfile] = React.useState({});
+
+  React.useEffect(() => {
+    const verifyProfile = localStorage.getItem("profile");
+    try {
+      if (verifyProfile) {
+        const profileJson = JSON.parse(verifyProfile);
+        setProfile(profileJson);
+      }
+    } catch (error) {
+      
+    }
+  }, [])
+
   return (
     <Page
       className={classes.root}
@@ -36,7 +50,7 @@ const Account = () => {
             md={6}
             xs={12}
           >
-            <Profile />
+            <Profile profile={profile}/>
           </Grid>
           <Grid
             item
@@ -44,7 +58,7 @@ const Account = () => {
             md={6}
             xs={12}
           >
-            <ProfileDetails />
+            <ProfileDetails profile={profile}/>
           </Grid>
         </Grid>
       </Container>

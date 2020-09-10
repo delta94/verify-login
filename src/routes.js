@@ -9,6 +9,7 @@ import LoginView from 'src/views/auth/LoginView';
 import NotFoundView from 'src/views/errors/NotFoundView';
 import ProductListView from 'src/views/product/ProductListView';
 import RegisterView from 'src/views/auth/RegisterView';
+import GetCodeView from "src/views/auth/GetOAuthCodeView";
 import SettingsView from 'src/views/settings/SettingsView';
 
 const routes = [
@@ -30,7 +31,7 @@ const routes = [
     children: [
       { path: 'login', element: <LoginView /> },
       { path: 'dashboard', element: <DashboardView /> },
-      { path: 'register', element: <RegisterView /> },
+      { path: 'oauth', element: <GetCodeView /> },
       { path: '404', element: <NotFoundView /> },
       { path: '/', element: <Navigate to="/login" /> },
       { path: '*', element: <Navigate to="/404" /> }

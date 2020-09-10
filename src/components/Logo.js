@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Logo = (props) => {
+  console.log("Logo -> props", props)
   return (
     <img
       alt="Logo"
