@@ -14,7 +14,7 @@ import {
   makeStyles,
 } from "@material-ui/core";
 import Page from "src/components/Page";
-import { auth } from "src/sdk";
+import { auth } from "verify-auth-library";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -28,9 +28,9 @@ const useStyles = makeStyles((theme) => ({
 const OAuth2Client = auth.OAuth2Client;
 
 const verifyOAuth = new OAuth2Client({
-  client_id: "1d910a12-6186-421a-a3db-103417741f7c",
-  redirect_uri: "http://localhost:3000",
-  secret: "uBmN_rezn7W5BoWH5gjKPcXYkx",
+  client_id: "fd4109b5-2711-4707-a11f-7807031f2181",
+  redirect_uri: "http://localhost:3000/oauth",
+  secret: "EqZEDzIORy3VwUx6J6VBEksedq",
 });
 
 async function doAuth(navigate) {
